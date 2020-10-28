@@ -1,0 +1,45 @@
+.button {
+  @include center;
+  width: 100%;
+  white-space: nowrap;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+
+  &.button_save {
+    background-color: $primary-dark;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+    &:hover {
+      background-color: #c34c4c;
+    }
+  }
+  &.button_unsubscribe {
+    color: $info;
+    border: 1px solid #b7b7b7;
+    &:hover {
+      background-color: #c34c4c;
+    }
+  }
+  &.button_modal {
+    background-color: $primary-dark;
+    color: #fff;
+    font-size: 18px;
+    width: 280px;
+    max-width: 100%;
+    &:hover {
+      background-color: #c34c4c;
+    }
+  }
+  @media screen and (max-width: 760px) {
+
+    &.button_save {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+

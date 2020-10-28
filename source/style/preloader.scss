@@ -1,0 +1,37 @@
+.preloader {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include center;
+    .preloader__img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .preloader__pic {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        animation-name: spin;
+        animation-duration: 1200ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .preloader__count {
+        color: #fff;
+        position: absolute;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

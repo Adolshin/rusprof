@@ -1,0 +1,98 @@
+html {
+  width: 100%;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: SegoeUIRegular;
+  color: $primary-light;
+
+  @include tablets {
+    font-size: .9rem;
+  }
+  @include phones {
+    font-size: .85rem;
+  }
+
+}
+
+.body_block {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  min-width: 320px;
+  background-color: $background;
+  padding: 25px;
+  min-height: 100vh;
+  @include phones {
+    padding: 10px;
+  }
+}
+
+
+.container {
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 10px solid $background-h;
+  padding-top: 70px;
+  padding-bottom: 35px;
+  display: flex;
+  @media screen and (max-width: 1005px) {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+  @include phones {
+    padding: 10px;
+    border: 4px solid $background-h;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+extends ../_templateindex
+
+block variables
+  - var title = 'Главная'
+block content
+  .wrapper
+    .container
+      aside.aside
+        .aside__block
+          .logo
+            img(src='../assets/img/logo.png').logo__img
+          .aside__title How much fun do you want in your life?
+        .aside__block
+          .aside__user harry.simon@yahoo.com
+          .fun
+            .fun__title fun you get
+            .fun__row
+              .fun__bar
+                .fun__bar-bg
+                .fun__bar-lavel.js-fan
+              .fun__value.js-value
+        .aside__block
+          .aside__subscribe #[a(href="#") Subscribe] to all our fun sites to upgrade your fun progress
+          .aside__address EntertainMeMore 11807 Westheimer 550 PMB617 Houston, TX 77077
+          a(href="mailto:email@entertainmetmore.com").aside__email email@entertainmetmore.com
+          a(href="#").aside__privacy Privacy Policy
+      main.main
+        .main__content
+          h1.main__title Ok, let’s change your preferences
+          .main__text To unsubscribe, please uncheck the appropriate box(es).
+        .sites
+          .sites__list
+            .sites__item.js-site
+              .sites__item-img
+                img(src='../assets/img/1.png').sites__item-pic
+              .sites__item-text #[span.sites__item-name]. True/False Quiz. Keep your brain fit!
+              .sites__item-switch
+                .sites__item-switch-title
+                  .sites__item-switch-text Unsubscribed
+                  .sites__item-switch-text.sites__item-switch-text_active Subscribed
+                .sites__item-switch-bar
+                  .sites__item-switch-thumb
+            .sites__item.js-site
+              .sites__item-img
+                img(src='../assets/img/4.png').sites__item-pic
+              .sites__item-text #[span.sites__item-name]. Easy Yes/No Quiz. Distinguish facts from fiction!
+              .sites__item-switch
+                .sites__item-switch-title
+                  .sites__item-switch-text Unsubscribed
+                  .sites__item-switch-text.sites__item-switch-text_active Subscribed
+                .sites__item-switch-bar
+                  .sites__item-switch-thumb
+            .sites__item.js-site
+              .sites__item-img
+                img(src='../assets/img/2.png').sites__item-pic
+              .sites__item-text #[span.sites__item-name]. Fun photo Quiz. Match words and names to pictures of objects and people.
+              .sites__item-switch
+                .sites__item-switch-title
+                  .sites__item-switch-text Unsubscribed
+                  .sites__item-switch-text.sites__item-switch-text_active Subscribed
+                .sites__item-switch-bar
+                  .sites__item-switch-thumb
+            .sites__item.js-site
+              .sites__item-img
+                img(src='../assets/img/5.png').sites__item-pic
+              .sites__item-text #[span.sites__item-name]. Movie Photo Quiz. Guess the film by a still!
+              .sites__item-switch
+                .sites__item-switch-title
+                  .sites__item-switch-text Unsubscribed
+                  .sites__item-switch-text.sites__item-switch-text_active Subscribed
+                .sites__item-switch-bar
+                  .sites__item-switch-thumb
+            .sites__item.js-site
+              .sites__item-img
+                img(src='../assets/img/3.png').sites__item-pic
+              .sites__item-text #[span.sites__item-name]. Celebrity Photo Quiz. Guess the star by a photo!
+              .sites__item-switch
+                .sites__item-switch-title
+                  .sites__item-switch-text Unsubscribed
+                  .sites__item-switch-text.sites__item-switch-text_active Subscribed
+                .sites__item-switch-bar
+                  .sites__item-switch-thumb
+            .sites__item.js-site
+              .sites__item-img
+                img(src='../assets/img/6.png').sites__item-pic
+              .sites__item-text #[span.sites__item-name]. Geography quiz. Guess the country by the photo (fact/description)
+              .sites__item-switch
+                .sites__item-switch-title
+                  .sites__item-switch-text Unsubscribed
+                  .sites__item-switch-text.sites__item-switch-text_active Subscribed
+                .sites__item-switch-bar
+                  .sites__item-switch-thumb
+        .main__buttons
+          a(href="#").button.button_save.js-save Save changes
+          a(href="#").button.button_unsubscribe.js-unsubscribe Unsubscribe from all of the above. It’s over
+  .overlay
+    .modal
+      .modal__content
+        .modal__title Hurrah!
+        .modal__text Your subscription preferences have been succesfully saved
+        .modal__value.js-diff
+        .modal__info.js-info fun lost :(
+        .button.button_modal.js-close Ok, great!
