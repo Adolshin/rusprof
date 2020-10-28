@@ -46,11 +46,11 @@
     border: 1px solid #fff;
     box-shadow: 0 0 9px 0 rgba(88, 180, 134, 0.2);
 
-    .sites__item-title-text {
+    .sites__item-switch-text {
       transform: translateY(-100%);
       opacity: 0;
 
-      &.sites__item-title-text_active {
+      &.sites__item-switch-text_active {
         transform: translateY(0);
         opacity: 1;
       }

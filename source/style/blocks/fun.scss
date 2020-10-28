@@ -25,6 +25,9 @@
 .fun__row {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1005px) {
+    margin-left: 44px;
+  }
 }
 
 .fun__bar-bg {
@@ -40,9 +43,11 @@
   left: 0;
   top: 0;
   z-index: 1;
+  transition: .3s;
 }
 
 .fun__value {
   color: $warning;
   font-size: 18px;
+  line-height: 1;
 }
